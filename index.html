@@ -1,102 +1,149 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Personal Information Form</title>
+    <title>Lab 2</title>
     <style>
       body {
         font-family: Arial, sans-serif;
       }
 
-      form {
+      h1 {
+        text-align: center;
+      }
+
+      table {
         width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      img {
+        display: block;
         margin: 0 auto;
       }
 
-      label {
-        display: block;
-        margin-top: 10px;
+      ul {
+        margin: 0;
+        padding: 0;
       }
 
-      input[type="text"],
-      input[type="date"],
-      textarea {
-        width: 100%;
-        padding: 8px;
+      ul li {
+        list-style: none;
+        margin-bottom: 5px;
       }
 
-      select {
-        width: 100%;
-        padding: 8px;
+      a {
+        color: #0077cc;
+        text-decoration: none;
       }
 
-      .address-section {
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin-top: 10px;
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <h1>Personal Information Form</h1>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <h1>Add Your Matric</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Aoni</td>
+        <td rowspan="2">
+          <img src="your_picture_path.jpg" width="200" height="200" alt="Profile picture">
+        </td>
+      </tr>
 
-      <label for="photo">Photo:</label>
-      <input type="file" id="photo" name="photo">
+      <tr>
+        <th>Date of birth</th>
+        <td>23 May 2004</td>
+      </tr>
 
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required>
+      <tr>
+        <th>Religion</th>
+        <td colspan="2">Islam</td>
+      </tr>
 
-      <label for="religion">Religion:</label>
-      <input type="text" id="religion" name="religion" required>
+      <tr>
+        <th>Race</th>
+        <td colspan="2">Arab</td>
+      </tr>
 
-      <label for="race">Race:</label>
-      <input type="text" id="race" name="race" required>
+      <tr>
+        <th rowspan="5">Address</th>
+      </tr>
 
-      <div class="address-section">
-        <h2>Address</h2>
-        <label for="street">Street:</label>
-        <input type="text" id="street" name="street" required>
+      <tr>
+        <th>Street</th>
+        <td>Jalan Persiaran Bdr Universiti</td>
+      </tr>
 
-        <label for="town">Town:</label>
-        <input type="text" id="town" name="town" required>
+      <tr>
+        <th>Town</th>
+        <td>Parit Raja</td>
+      </tr>
 
-        <label for="district">District:</label>
-        <input type="text" id="district" name="district" required>
+      <tr>
+        <th>District</th>
+        <td>Batu Pahat</td>
+      </tr>
 
-        <label for="state">State:</label>
-        <input type="text" id="state" name="state" required>
-      </div>
+      <tr>
+        <th>State</th>
+        <td>Johor</td>
+      </tr>
 
-      <div class="address-section">
-        <h2>Contact</h2>
-        <label for="mobile">Mobile Phone:</label>
-        <input type="tel" id="mobile" name="mobile" required>
+      <tr>
+        <th rowspan="4">Contact</th>
+      </tr>
 
-        <label for="socialMedia">Social Media:</label>
-        <input type="url" id="socialMedia" name="socialMedia">
+      <tr>
+        <th>Mobile Phone</th>
+        <td>01160673933</td>
+      </tr>
 
-        <label for="website">Website:</label>
-        <input type="url" id="website" name="website">
+      <tr>
+        <th>Social Media</th>
+        <td>
+          <ul>
+            <li><a href="your_link" target="_blank">Instagram</a></li>
+          </ul>
+        </td>
+      </tr>
 
-        <label for="course">Course / Institution:</label>
-        <input type="text" id="course" name="course" required>
+      <tr>
+        <th>Website</th>
+        <td>N/A</td>
+      </tr>
 
-        <label for="programmingSkills">Programming Skills:</label>
-        <select id="programmingSkills" name="programmingSkills" required>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
+      <tr>
+        <th colspan="2">Course / Institution</th>
+        <td>BIS / UTHM</td>
+      </tr>
 
-        <label for="personalInterest">Personal Interest:</label>
-        <textarea id="personalInterest" name="personalInterest" rows="4"></textarea>
+      <tr>
+        <th colspan="2">Programming Skills</th>
+        <td>Yes</td>
+      </tr>
 
-        <label for="futurePlan">Future Plan:</label>
-        <textarea id="futurePlan" name="futurePlan" rows="4"></textarea>
-      </div>
+      <tr>
+        <th colspan="2">Personal Interest</th>
+        <td>Add Your personal_interest</td>
+      </tr>
 
-      <input type="submit" value="Submit">
-    </form>
+      <tr>
+        <th colspan="2">Plan in 2024</th>
+        <td>Add your plan</td>
+      </tr>
+    </table>
   </body>
 </html>
