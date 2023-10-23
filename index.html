@@ -12,6 +12,10 @@
         margin: 0 auto;
       }
 
+      table {
+        width: 100%;
+      }
+
       label {
         display: block;
         margin-top: 10px;
@@ -39,63 +43,80 @@
   <body>
     <h1>Personal Information Form</h1>
     <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" required></td>
+        </tr>
 
-      <label for="photo">Photo:</label>
-      <input type="file" id="photo" name="photo">
+        <tr>
+          <td><label for="photo">Photo:</label></td>
+          <td><input type="file" id="photo" name="photo"></td>
+        </tr>
 
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required>
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
 
-      <label for="religion">Religion:</label>
-      <input type="text" id="religion" name="religion" required>
+        <tr>
+          <td><label for="religion">Religion:</label></td>
+          <td><input type="text" id="religion" name="religion" required></td>
+        </tr>
 
-      <label for="race">Race:</label>
-      <input type="text" id="race" name="race" required>
+        <tr>
+          <td><label for="race">Race:</label></td>
+          <td><input type="text" id="race" name="race" required></td>
+        </tr>
 
-      <div class="address-section">
-        <h2>Address</h2>
-        <label for="street">Street:</label>
-        <input type="text" id="street" name="street" required>
+        <tr>
+          <td class="address-section" colspan="2">
+            <h2>Address</h2>
 
-        <label for="town">Town:</label>
-        <input type="text" id="town" name="town" required>
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required>
 
-        <label for="district">District:</label>
-        <input type="text" id="district" name="district" required>
+            <label for="town">Town:</label>
+            <input type="text" id="town" name="town" required>
 
-        <label for="state">State:</label>
-        <input type="text" id="state" name="state" required>
-      </div>
+            <label for="district">District:</label>
+            <input type="text" id="district" name="district" required>
 
-      <div class="address-section">
-        <h2>Contact</h2>
-        <label for="mobile">Mobile Phone:</label>
-        <input type="tel" id="mobile" name="mobile" required>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+          </td>
+        </tr>
 
-        <label for="socialMedia">Social Media:</label>
-        <input type="url" id="socialMedia" name="socialMedia">
+        <tr>
+          <td class="address-section" colspan="2">
+            <h2>Contact</h2>
 
-        <label for="website">Website:</label>
-        <input type="url" id="website" name="website">
+            <label for="mobile">Mobile Phone:</label>
+            <input type="tel" id="mobile" name="mobile" required>
 
-        <label for="course">Course / Institution:</label>
-        <input type="text" id="course" name="course" required>
+            <label for="socialMedia">Social Media:</label>
+            <input type="url" id="socialMedia" name="socialMedia">
 
-        <label for="programmingSkills">Programming Skills:</label>
-        <select id="programmingSkills" name="programmingSkills" required>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website">
 
-        <label for="personalInterest">Personal Interest:</label>
-        <textarea id="personalInterest" name="personalInterest" rows="4"></textarea>
+            <label for="course">Course / Institution:</label>
+            <input type="text" id="course" name="course" required>
 
-        <label for="futurePlan">Future Plan:</label>
-        <textarea id="futurePlan" name="futurePlan" rows="4"></textarea>
-      </div>
+            <label for="programmingSkills">Programming Skills:</label>
+            <select id="programmingSkills" name="programmingSkills" required>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
 
+            <label for="personalInterest">Personal Interest:</label>
+            <textarea id="personalInterest" name="personalInterest" rows="4"></textarea>
+
+            <label for="futurePlan">Future Plan:</label>
+            <textarea id="futurePlan" name="futurePlan" rows="4"></textarea>
+          </td>
+        </tr>
+      </table>
       <input type="submit" value="Submit">
     </form>
   </body>
