@@ -1,119 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Personal Information Form</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+</style>
+</head>
+<body>
 
-      form {
-        width: 50%;
-        margin: 0 auto;
-      }
+<h2>please fill your information</h2>
+<title>Lab 2</title>
 
-      table {
-        width: 100%;
-      }
 
-      label {
-        display: block;
-        margin-top: 5px;
-      }
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <td>BAKOUR MOUSTAPHA MOHAMED MAINA</td>
+    <th><img src="Add your picture path" width="300" high="300" alt="Profile picture"></th>
 
-      input[type="text"],
-      input[type="date"],
-      textarea,
-      select {
-        width: 100%;
-        padding: 5px;
-      }
+  </tr>
+  <tr>
+    <th>Phone</th>
+    <td>01162165733</td>
+  </tr>
+  <tr>
+   <tr>
+     <tr>
+            <th>Religion</th>
+            <td>Islam</td>
+          </tr>
 
-      .address-section {
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin-top: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Personal Information Form</h1>
-    <form>
-      <table>
-        <tr>
-          <td><label for="name">Name:</label></td>
-          <td><input type="text" id="name" name="name" required></td>
+          <th>Date of birth</th>
+          <td>2 JUL 1994</td>
         </tr>
+                  <tr>
+            <th>Race</th>
+            <td>AFRICA</td>
+          </tr>
+          
+          <tr>
+            <th rowspan="5">Address</th>
+          </tr>
 
-        <tr>
-          <td><label for="photo">Photo:</label></td>
-          <td><input type="file" id="photo" name="photo"></td>
-        </tr>
+          <tr>
+            <th>Street</th>
+            <td >Jalan Persiaran Bdr Universiti</td>
+          </tr>
+           <tr>
+            <th>Town
+            </th>
+            <td >Parit Raja</td>
+          </tr>
 
-        <tr>
-          <td><label for="dob">Date of Birth:</label></td>
-          <td><input type="date" id="dob" name="dob" required></td>
-        </tr>
+          <tr>
+            <th>District</th>
+            <td >Batu Pahat</td>
+          </tr>
+          
+           <tr>
+            <th>State</th>
+            <td >Johor</td>
+          </tr>
 
-        <tr>
-          <td><label for="religion">Religion:</label></td>
-          <td><input type="text" id="religion" name="religion" required></td>
-        </tr>
+          <tr>
+            <th rowspan="4">Contact</th>
+          </tr>
+          
+          <tr>
+            <th>Mobile Phone</th>
+            <td >01160673933</td>
+          </tr>
 
-        <tr>
-          <td><label for="race">Race:</label></td>
-          <td><input type="text" id="race" name="race" required></td>
-        </tr>
+          <tr>
+            <th>Social Media</th>
+            <td ><ul>
+            
+              <li><a href="your link" target="_blank">Instagram</a></li>
+                
+              </ul></td>
+          </tr>
 
-        <tr>
-          <td class="address-section" colspan="2">
-            <h2>Address</h2>
+          <tr>
+            <th>website</th>
+            <td > N/A </td>
+             <td > </td>
+          </tr>
+          
+          <tr>
+            <th>Course / Institution
+            </th>
+            <td >BIS / UTHM</td>
+             <td > </td>
+          </tr>
 
-            <label for="street">Street:</label>
-            <input type="text" id="street" name="street" required>
+          <tr>
+            <th>Programming skills</th>
+            <td >Yes</td>
+             <td > </td>
+          </tr>
+          
+           <tr>
+            <th>Personal Interest</th>
+            <td > Add Your personal_interest</td>
+             <td > </td>
+          </tr>
+          
+          
+          <tr>
+            <th>Plan in 2024</th>
+            <td > Add your plan</td>
+             <td > </td>
+          </tr>
+          
+           <th>Religion</th>
+           <td > Add your plan</td>
+           <td > </td>
+            
+          </tr>
 
-            <label for="town">Town:</label>
-            <input type="text" id="town" name="town" required>
 
-            <label for="district">District:</label>
-            <input type="text" id="district" name="district" required>
 
-            <label for="state">State:</label>
-            <input type="text" id="state" name="state" required>
-          </td>
-        </tr>
 
-        <tr>
-          <td class="address-section" colspan="2">
-            <h2>Contact</h2>
 
-            <label for="mobile">Mobile Phone:</label>
-            <input type="tel" id="mobile" name="mobile" required>
 
-            <label for="socialMedia">Social Media:</label>
-            <input type="url" id="socialMedia" name="socialMedia">
 
-            <label for="website">Website:</label>
-            <input type="url" id="website" name="website">
 
-            <label for="course">Course / Institution:</label>
-            <input type="text" id="course" name="course" required>
 
-            <label for="programmingSkills">Programming Skills:</label>
-            <select id="programmingSkills" name="programmingSkills" required>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
 
-            <label for="personalInterest">Personal Interest:</label>
-            <textarea id="personalInterest" name="personalInterest" rows="4"></textarea>
-
-            <label for="futurePlan">Future Plan:</label>
-            <textarea id="futurePlan" name="futurePlan" rows="4"></textarea>
-          </td>
-        </tr>
-      </table>
-      <input type="submit" value="Submit">
-    </form>
-  </body>
+  </tr>
+</table>
+</body>
 </html>
+
